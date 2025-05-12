@@ -1,0 +1,8 @@
+transformers==4.30.0
+torch==2.6.0
+pillow==10.4.0
+
+
+speechrecognition==3.8.1
+scipy
+requests
