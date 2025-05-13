@@ -23,7 +23,7 @@ import os
 
 def convert_speech_to_text(audio_path):
     if not os.path.exists(audio_path):
-        return f"❌ File not found: {audio_path}"
+        return f" File not found: {audio_path}"
 
     recognizer = sr.Recognizer()
     try:
@@ -34,9 +34,9 @@ def convert_speech_to_text(audio_path):
         return f"Transcription: {text}"
     
     except sr.UnknownValueError:
-        return "❌ Sorry, I could not understand the audio."
+        return " Sorry, I could not understand the audio."
     except sr.RequestError as e:
-        return f"❌ Could not request results; {e}"
+        return f"Could not request results; {e}"
 
 # Example usage
 if __name__ == "__main__":
